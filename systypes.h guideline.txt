@@ -7,7 +7,7 @@ Syntax:
 
 
 Description:
-        The < sys / types.h > header shall contain definitions for at 
+        The <sys/types.h> header shall contain definitions for at 
         least the following types:
         
 blkcnt_t
