@@ -36,4 +36,4 @@
 #define B_WHITE		"\e[1;37m"
 #define RESET		"\e[0m"
 
-#endif	/* COLORS_H */
+#endif
