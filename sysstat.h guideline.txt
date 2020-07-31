@@ -1,0 +1,117 @@
+<sys/stat.h> is the header in the C POSIX library for the C programming 
+language that contains constructs that facilitate getting information 
+about files attributes. 
+
+Member functions:
+
+int stat (const char *filename, struct stat *buf)
+
+  The stat function returns information about the attributes of the file 
+  named by filename in the structure pointed to by buf. If filename is 
+  the name of a symbolic link, the attributes you get describe the file 
+  that the link points to. If the link points to a nonexistent file name, 
+  then stat fails reporting a nonexistent file. The return value is 0 if 
+  the operation is successful, or -1 on failure. When the sources are 
+  compiled with _FILE_OFFSET_BITS == 64 this function is in fact stat64 
+  since the LFS interface transparently replaces the normal implementation.
+  errno Errors: ENOENT means the file named by filename doesn't exist. 
+  
+int stat64 (const char *filename, struct stat64 *buf) 
+
+  This function is similar to stat but it is also able to work on files 
+  larger than 2^31 bytes on 32-bit systems. To be able to do this the 
+  result is stored in a variable of type struct stat64 to which buf must 
+  point. When the sources are compiled with _FILE_OFFSET_BITS == 64 this 
+  function is available under the name stat and so transparently replaces 
+  the interface for small files on 32-bit machines.
+  errno Errors: ENOENT means the file named by filename doesn't exist. 
+  
+int fstat (int filedes, struct stat *buf) 
+
+  The fstat function is like stat, except that it takes an open file descriptor 
+  (filedes)as an argument instead of a file name. Like stat, fstat returns 0 on 
+  success and -1 on failure. When the sources are compiled with 
+  _FILE_OFFSET_BITS == 64 this function is in fact fstat64 since the LFS interface
+  transparently replaces the normal implementation.
+  errno Errors: EBADF means the filedes argument is nos a valid file descriptor.
+  
+int fstat64 (int filedes, struct stat64 *buf) 
+
+  This function is similar to fstat but is able to work on large files on 32-bit platforms. 
+  For large files the file descriptor filedes should be obtained by open64 or creat64. 
+  The buf pointer points to a variable of type struct stat64 which is able to represent the 
+  larger values. When the sources are compiled with _FILE_OFFSET_BITS == 64 this function is 
+  available under the name fstat and so transparently replaces the interface for small files 
+  on 32-bit machines.
+  errno Errors: EBADF means the filedes argument is nos a valid file descriptor. 
+  
+int lstat (const char *filename, struct stat *buf)
+
+  The lstat function is like stat, except that it does not follow symbolic links. If filename 
+  is the name of a symbolic link, lstat returns information about the link itself; otherwise 
+  lstat works like stat. See Symbolic Links. When the sources are compiled with 
+  _FILE_OFFSET_BITS == 64 this function is in fact lstat64 since the LFS interface transparently 
+  replaces the normal implementation.
+  
+int lstat64 (const char *filename, struct stat64 *buf) 	
+
+` The lstat function is like stat, except that it does not follow symbolic links. If filename is 
+  the name of a symbolic link, lstat returns information about the link itself; otherwise lstat works 
+  like stat. See Symbolic Links. When the sources are compiled with _FILE_OFFSET_BITS == 64 this 
+  function is in fact lstat64 since the LFS interface transparently replaces the normal implementation.
+  
+  
+  
+Member types:
+
+
+  struct stat {
+    dev_t     st_dev;     /* ID of device containing file */
+    ino_t     st_ino;     /* inode number */
+    mode_t    st_mode;    /* protection */
+    nlink_t   st_nlink;   /* number of hard links */
+    uid_t     st_uid;     /* user ID of owner */
+    gid_t     st_gid;     /* group ID of owner */
+    dev_t     st_rdev;    /* device ID (if special file) */
+    off_t     st_size;    /* total size, in bytes */
+    blksize_t st_blksize; /* blocksize for file system I/O */
+    blkcnt_t  st_blocks;  /* number of blocks allocated */
+    time_t    st_atime;   /* time of last access */
+    time_t    st_mtime;   /* time of last modification */
+    time_t    st_ctime;   /* time of last status change */
+  };
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
