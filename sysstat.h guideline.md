@@ -66,7 +66,6 @@ int lstat64 (const char *filename, struct stat64 *buf)
   
 Member types:
 
-
   struct stat {
     dev_t     st_dev;     /* ID of device containing file */
     ino_t     st_ino;     /* inode number */
@@ -83,30 +82,6 @@ Member types:
     time_t    st_ctime;   /* time of last status change */
   };
   
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
