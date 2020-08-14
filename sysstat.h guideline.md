@@ -1,3 +1,5 @@
+# sys/stat.h guideline
+
 <sys/stat.h> is the header in the C POSIX library for the C programming 
 language that contains constructs that facilitate getting information 
 about files attributes. 
