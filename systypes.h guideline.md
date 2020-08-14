@@ -1,4 +1,6 @@
-﻿Name:
+# sys/types.h guideline
+ 
+ Name:
         sys/types.h
 
 
