@@ -1,3 +1,5 @@
+# getopt.h guideline
+
 For details about using and syntax:
   https://en.wikipedia.org/wiki/Getopt
   
