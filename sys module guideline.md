@@ -7,7 +7,7 @@ It is always available.
 Some most used sys methods are highlighted in the following:
 
     sys.copyright : Shows the Official copyright of Python
-    sys.dllhandle : Shows the handle that maintain python dlls
+    sys.dllhandle : Shows the handle that maintain python dlls only for windows
     sys.executable : Shows the executable file with its path
     sys.getrecursionlimit : Gives the default value (if not set later) of
                             recursion limit
@@ -27,5 +27,20 @@ Some most used sys methods are highlighted in the following:
                using the -c command line option to the interpreter, argv[0] is set 
                to the string '-c'. If no script name was passed to the Python 
                interpreter, argv[0] is the empty string.
+               
+    sys._clear_type_cache : Clear the internal type cache. The type cache is used to 
+                            speed up attribute and method lookups. Use the function 
+                            only to drop unnecessary references during reference 
+                            leak debugging. This function should be used for internal 
+                            and specialized purposes only.
+                            
+    sys.dont_write_bytecode : If this is true, Python won’t try to write .pyc files on 
+                              the import of source modules. This value is initially set 
+                              to True or False depending on the -B command line option 
+                              and the PYTHONDONTWRITEBYTECODE environment variable, but 
+                              you can set it yourself to control bytecode file generation.
+                              
+      
+
                
              
