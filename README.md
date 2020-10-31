@@ -9,6 +9,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Hridoy-31/Disktroy)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Hridoy-31/Disktroy)
 ![Lines of code](https://img.shields.io/tokei/lines/github/Hridoy-31/Disktroy)
+![Repo status](https://img.shields.io/badge/status-building-blue)
 
 # Disktroy
 
