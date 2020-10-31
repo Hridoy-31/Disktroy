@@ -1,5 +1,10 @@
 <img src="img/Disktroy.png" alt="Disktroy Logo" width=200 height=200/>
 
+[![GitHub issues](https://img.shields.io/github/issues/Hridoy-31/Disktroy)](https://github.com/Hridoy-31/Disktroy/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Hridoy-31/Disktroy)](https://github.com/Hridoy-31/Disktroy/network)
+[![GitHub stars](https://img.shields.io/github/stars/Hridoy-31/Disktroy)](https://github.com/Hridoy-31/Disktroy/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Hridoy-31/Disktroy)](https://github.com/Hridoy-31/Disktroy/blob/master/LICENSE)
+
 # Disktroy
 
 Disktroy is a program to destroy the contents of a particular disk. 
