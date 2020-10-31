@@ -4,6 +4,11 @@
 [![GitHub forks](https://img.shields.io/github/forks/Hridoy-31/Disktroy)](https://github.com/Hridoy-31/Disktroy/network)
 [![GitHub stars](https://img.shields.io/github/stars/Hridoy-31/Disktroy)](https://github.com/Hridoy-31/Disktroy/stargazers)
 [![GitHub license](https://img.shields.io/github/license/Hridoy-31/Disktroy)](https://github.com/Hridoy-31/Disktroy/blob/master/LICENSE)
+![GitHub language count](https://img.shields.io/github/languages/count/Hridoy-31/Disktroy)
+![GitHub top language](https://img.shields.io/github/languages/top/Hridoy-31/Disktroy)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Hridoy-31/Disktroy)
+![GitHub repo size](https://img.shields.io/github/repo-size/Hridoy-31/Disktroy)
+![Lines of code](https://img.shields.io/tokei/lines/github/Hridoy-31/Disktroy)
 
 # Disktroy
 
